@@ -7,6 +7,7 @@ from . import models
 def index(request):
 
     try:
+        ur_name = request.GET['user_name']
         urid = request.GET['user_id']
         urpass = request.GET['user_pass']
         user_post = request.GET['user_post']
